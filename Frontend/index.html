@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AIpply - Smart Job Recommendations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%234361ee'/><text x='50' y='60' font-family='Arial,sans-serif' font-size='35' font-weight='bold' text-anchor='middle' fill='white'>AI</text></svg>" type="image/svg+xml">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-chart-line chart-line"></i>
+            </div>
+            <span>AIpply</span>
+        </div>
+        <ul>
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+            <li><a href="#services"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="main-content">
+        <section id="welcome-section">
+            <div class="welcome-content">
+                <h1>Find Your Dream Job Today</h1>
+                <p class="subtitle">AI-powered job matching that understands your skills and career aspirations</p>
+                <div class="cta-buttons">
+                    <button onclick="scrollToUpload()" class="primary-btn">
+                        <i class="fas fa-cloud-upload-alt"></i> Upload CV
+                    </button>
+                    <button onclick="scrollToHowItWorks()" class="secondary-btn">
+                        <i class="fas fa-play-circle"></i> How It Works
+                    </button>
+                </div>
+            </div>
+            <div class="welcome-image">
+                <div class="aipply-logo-showcase">
+                    <div class="logo-background">
+                        <div class="large-logo-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="logo-text">AIpply</div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="floating-icon" style="top: 20%; left: 15%; animation-delay: 0s;">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="floating-icon" style="top: 60%; left: 10%; animation-delay: 1s;">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <div class="floating-icon" style="top: 80%; right: 20%; animation-delay: 2s;">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="floating-icon" style="top: 30%; right: 15%; animation-delay: 0.5s;">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="upload-section" class="card">
+            <h2><i class="fas fa-file-upload"></i> Upload Your CV</h2>
+            <p class="section-description">Get personalized job recommendations in seconds</p>
+            
+            <div class="upload-form">
+                <div class="file-upload">
+                    <input type="file" id="cvInput" accept=".pdf,.doc,.docx" required>
+                    <label for="cvInput" id="fileLabel">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Choose your CV file</span>
+                    </label>
+                    <div class="file-info" id="fileInfo"></div>
+                </div>
+                
+                <div style="display: flex; gap: 15px; align-items: center;">
+                    <button type="button" id="uploadBtn" class="submit-btn" onclick="uploadCV()">
+                        <i class="fas fa-cloud-upload-alt"></i> Upload to Cloud
+                    </button>
+                    
+                    <button type="button" id="recommendBtn" class="submit-btn" onclick="getRecommendations()" style="display: none;">
+                        <i class="fas fa-brain"></i> Get AI Recommendations
+                    </button>
+                </div>
+                
+                <div id="message" class="message" style="display: none;"></div>
+            </div>
+        </section>
+        
+        <section id="job-recommendation">
+            <div class="recommendation-header">
+                <h2><i class="fas fa-brain"></i> Your AI-Powered Job Matches</h2>
+                <p class="subtitle">Our artificial intelligence has analyzed your CV and found these perfect opportunities for you</p>
+            </div>
+            <div id="user-profile-summary" class="user-profile-summary" style="display: none;">
+                <h3><i class="fas fa-user-circle"></i> Your Profile Summary</h3>
+                <div class="profile-info" id="profileInfo">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+            <div id="recommendations-container" class="recommendations-container">
+                <!-- Dynamic job recommendations will be inserted here -->
+            </div>
+            <div id="no-recommendations" class="no-recommendations" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No Job Matches Found</h3>
+                <p>We couldn't find any job matches for your profile at the moment. Try uploading an updated CV or check back later for new opportunities.</p>
+            </div>
+        </section>
+        
+        <section id="how-it-works" class="card">
+            <h2><i class="fas fa-robot"></i> How Our AI System Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3>Upload Your CV</h3>
+                    <p>Submit your resume in PDF or Word format securely to our cloud storage</p>
+                </div>
+                <div class="step">
+                    <div class="step-number"><i class="fas fa-brain"></i></div>
+                    <h3>AI Analysis</h3>
+                    <p>Our advanced AI system extracts and analyzes your skills, experience, and qualifications</p>
+                </div>
+                <div class="step">
+                    <div class="step-number"><i class="fas fa-bullseye"></i></div>
+                    <h3>Smart Matching</h3>
+                    <p>We match you with ideal job opportunities from our extensive database of employers</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AIpply</h3>
+                <p>Smart job recommendations powered by artificial intelligence</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 AIpply. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
