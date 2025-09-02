@@ -27,8 +27,8 @@ This project is an intelligent job recommendation system that helps users find t
 - **Cloud-Native**: Built entirely on AWS for scalability and reliability
 
 
-## Project Archticture
-![Project Archticture](/Images/Arch.png)
+## Project Architecture
+![Project Architecture](/Images/Arch.png)
 
 ## Features
 
@@ -70,6 +70,10 @@ graph TB
     F --> K[Similarity Search Engine]
     K --> L[Job Recommendations API]
     L --> M[Web Frontend]
+
+    style A fill:#e1f5fe
+    style F fill:#f3e5f5
+    style M fill:#e8f5e8
 ```
 
 ###  **Technology Stack**
