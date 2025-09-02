@@ -467,10 +467,9 @@ aws bedrock-runtime invoke-model \
 
 ## Author
 
-**[Your Name]**
-- GitHub:(https://github.com/mohamedelhariry00)
-- LinkedIn: (https://www.linkedin.com/in/mohamed-elhariry-/)
-- Email: mohamed.elhariry.00@gmail.com
+- **GitHub** -- https://github.com/mohamedelhariry00
+- **LinkedIn** -- https://www.linkedin.com/in/mohamed-elhariry-/
+- **Email** -- mohamed.elhariry.00@gmail.com
 
 ---
 
