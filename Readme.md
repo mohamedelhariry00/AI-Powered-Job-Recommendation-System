@@ -10,7 +10,7 @@
 ### 🌐 **[Try the Live Demo](https://staging.d2ewthu976q3qk.amplifyapp.com/)** -- https://staging.d2ewthu976q3qk.amplifyapp.com/
 
 ### **Demo Video**
-[![Demo Video](https://via.placeholder.com/600x300/ff6b6b/ffffff?text=▶️+Watch+Demo+Video)](https://drive.google.com/file/d/196s3HGR6LZedMWuf5tbeGmiwtX2g91ZA/view?usp=sharing)
+[![Demo Video](https://via.placeholder.com/600x300/ff6b6b/ffffff?text=▶️+Watch+Demo+Video)](https://github.com/user-attachments/assets/336d5fc5-fcbb-4b90-9661-4b7c3504c3c4)
 <!-- Replace with actual video thumbnail and link -->
 
 ---
