@@ -70,10 +70,6 @@ graph TB
     F --> K[Similarity Search Engine]
     K --> L[Job Recommendations API]
     L --> M[Web Frontend]
-
-    style A fill:#e1f5fe
-    style F fill:#e1f5fe
-    style M fill:#e1f5fe
 ```
 
 ###  **Technology Stack**
