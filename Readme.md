@@ -72,8 +72,8 @@ graph TB
     L --> M[Web Frontend]
 
     style A fill:#e1f5fe
-    style F fill:#f3e5f5
-    style M fill:#e8f5e8
+    style F fill:#e1f5fe
+    style M fill:#e1f5fe
 ```
 
 ###  **Technology Stack**
