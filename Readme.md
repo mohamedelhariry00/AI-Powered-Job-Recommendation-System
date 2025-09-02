@@ -468,9 +468,9 @@ aws bedrock-runtime invoke-model \
 ## Author
 
 **[Your Name]**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- Email: your.email@example.com
+- GitHub: [@yourusername](https://github.com/mohamedelhariry00)
+- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/mohamed-elhariry-/)
+- Email: mohamed.elhariry.00@gmail.com
 
 ---
 
